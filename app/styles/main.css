@@ -6,20 +6,22 @@
 }
 
 body {
-  background: #222;
+  background: #000;
   color: #FFF;
 }
 
+.row{
+ margin-right: 0;
+}
+.center {
+  margin: 0 auto;
+}
 .skewed-bg {
-  background: #00B285;
+  background: #FFB539;
   padding: 200px 0;
-  -webkit-transform: skew(0deg, 10deg);
-  transform: skew(0deg, 10deg);
   margin-top: -200px;
 }
 .skewed-bg .content {
-  -webkit-transform: skew(0deg, -10deg);
-  transform: skew(0deg, -10deg);
   text-align: center;
 }
 .skewed-bg .content .title {
@@ -33,15 +35,14 @@ body {
 }
 
 .skewed-bg-2 {
-  background: blue;
+  position: relative;
+  background: url(../images/header/bg_2.png) no-repeat top center;
+  background-size: 100%;
   padding: 200px 0;
-  -webkit-transform: skew(0deg, 10deg);
-  transform: skew(0deg, 10deg);
-  margin-top: -100px;
+  margin-top:-200px;
+  z-index: 100;
 }
 .skewed-bg-2 .content {
-  -webkit-transform: skew(0deg, -10deg);
-  transform: skew(0deg, -10deg);
   text-align: center;
 }
 .skewed-bg-2 .content .title {
@@ -55,7 +56,7 @@ body {
 }
 
 .footer {
-  padding-top: 300px;
+  padding-top: 100px;
 }
 .footer .credits {
   text-align: center;
@@ -64,4 +65,91 @@ body {
 .footer .credits .link {
   color: #00B285;
   text-decoration: none;
+}
+
+.slogan {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 1px 5px rgba(150, 150, 155, 1);
+  font-size: 31pt;
+  text-align: left;
+  margin-top: 100px;
+}
+.slogan small {
+  color: #fff;
+  font-size: 21pt;
+}
+
+.box {
+  background: #e7a032;
+  width: 180px;
+  height: 140px;
+  border-radius: 15px;
+  box-shadow: 2px 1px 5px rgba(150, 150, 155, 1);
+  text-align: center;
+  font-size:1.2em;
+  padding:10px;
+  margin: 5px;
+}
+.box b {
+  font-size: 3.0em;
+}
+
+.mapa{
+  background:url(../images/body/mapa_bg.png) no-repeat top center #000;
+  background-size:100% 90%;
+  margin-top: -260px;
+}
+.text-highlight {
+    color: #e7a032;
+    font-size: 19pt;
+    text-align: center;
+}
+
+.text-highlight b {
+    font-size: 39pt;
+}
+
+.text-desc {
+    color: #fffefe;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.text-desc b {
+    font-size: 23pt;
+}
+
+.form-control {
+  background:#4b4b4b;
+  border: 1px solid #d8d5d5;
+  border-radius: 15px;
+  color: #d8d5d5;
+  margin: 15px 0px;
+}
+.button {
+  background-color: #71b3cc;
+  border-radius: 15px;
+}
+
+.footer {
+  bottom: 0;
+}
+.footer p {
+  background: #e7a032;
+  height: 60px;
+  bottom: 0;
+  margin:0;
+}
+
+.fake-button {
+  background: #71afc8;
+  width: 300px;
+  height: auto;
+  color: white;
+  margin: 213px;
+  padding: 11px;
+  text-align: center;
+  border-radius: 15px;
+  transform: skew(0deg,-10deg);
 }
